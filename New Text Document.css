@@ -1,0 +1,219 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    } 
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    } 
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    } 
+}
+
+#logo {
+    width: 50px;
+}
+.header {
+    background-color: #161A30;
+   
+}
+.header .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 60px;
+}
+.header .container nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+.header .container nav ul li {
+    margin-right: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    transition: 0.3s;
+}
+.header .container nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.header .container nav ul li:hover {
+    background-color: #31304D;
+}
+.landing {
+    background-image: url(./image/Free-Cover-Image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.landing .container h1{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    height: 100vh;
+    font-size: 80px;
+    font-style: italic;
+    font-family: cursive;
+    margin: 0;
+}
+#login{
+    background-color: #161A30;
+   font-style: italic;
+   height: 60px;
+width: 100px;
+font-size: 20px;
+
+}
+#login a {
+    color: white;
+}
+.about {
+    padding: 80px 0 150px 0;
+}
+.about h1{
+    margin: auto;
+    width: fit-content;
+    text-transform: capitalize;
+    font-size: 55px;
+}
+
+.about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .container .image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+.about .container  p {
+    flex: 1;
+}
+.about .container .image img {
+   width: 350px;
+   
+}
+.about .container .image img:nth-child(2){
+    position: absolute;
+    top: 150px;
+    right: 200px;
+}
+.login {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 500px;
+    margin: auto;
+}
+form {
+   width: 100%;
+   display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid;
+    padding: 40px;
+
+}
+.input-field {
+    display: flex;
+    align-items: center;
+}
+.input-field label {
+    flex: 20%;
+}
+.input-field input {
+    flex: 80%;
+    padding: 7px;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #333;
+}
+.login button {
+    width: fit-content;
+    margin: auto;
+    padding: 5px 10px;
+}
+button a{
+   text-decoration: none;
+}
+
+    * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+
+}
+
+/* Add a blue text color to links */
+a {
+  color: rgb(0, 0, 0);
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
